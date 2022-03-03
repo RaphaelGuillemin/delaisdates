@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delais Date</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    <h1>Délais des dépots</h1>
+    <div style="overflow: hidden; float: none; width: 100%;">
+        <div class="Declaration">
+            <label for="datePickerDeclarationAppel">Sélectionner la date du dépôt de la déclaration d'appel :</label>
+            <br>
+            <input type="date" id="datePickerDeclarationAppel" name="datePickerDeclarationAppelInput">
+            <br>
+            <label for="dateLimiteDepotMemoireAppelant">Date limite de dépôt du mémoire de l'appelant :</label>
+            <br>
+            <input type="text" id ="dateLimiteDepotMemoireAppelant" name="dateLimiteDepotMemoireAppelantOutput" disabled>
+        </div>
+        <div class="Memoire">
+            <label for="datePickerMemoireAppelant">Sélectionner la date du dépôt du mémoire de l'appelant :</label>
+            <br>
+            <input type="date" id="datePickerMemoireAppelant" name="datePickerMemoireAppelantInput">
+            <br>
+            <label for="dateLimiteDepotMemoireIntime">Date limite de dépôt du mémoire de l'intimé :</label>
+            <br>
+            <input type="text" id ="dateLimiteDepotMemoireIntime" name="dateLimiteDepotMemoireIntimeOutput" disabled>
+            <br>
+            <label for="dateLimiteDepotMemoireMisEnCause">Date limite de dépôt du mémoire des mec. / int. :</label>
+            <br>
+            <input type="text" id ="dateLimiteDepotMemoireMisEnCause" name="dateLimiteDepotMemoireMisEnCauseOutput" disabled>
+            <br>
+        </div>
+        <div class="Button">
+            <button id="reinitialiseButton">Réinitiliser</button>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy Raphael Guillemin, 2022 </p>
+    </footer>
+    <script src="DelaisDate.js"></script>
+</body>
+</html>
