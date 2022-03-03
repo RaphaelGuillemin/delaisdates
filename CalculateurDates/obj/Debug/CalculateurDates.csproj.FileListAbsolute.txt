@@ -1,0 +1,10 @@
+C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\bin\Debug\CalculateurDates.exe.config
+C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\bin\Debug\CalculateurDates.exe
+C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\bin\Debug\CalculateurDates.pdb
+C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\obj\Debug\CalculateurDates.csproj.AssemblyReference.cache
+C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\obj\Debug\CalculateurDates.CalculateurDate.resources
+C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\obj\Debug\CalculateurDates.Properties.Resources.resources
+C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\obj\Debug\CalculateurDates.csproj.GenerateResource.cache
+C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\obj\Debug\CalculateurDates.csproj.CoreCompileInputs.cache
+C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\obj\Debug\CalculateurDates.exe
+C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\obj\Debug\CalculateurDates.pdb

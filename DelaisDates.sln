@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelaisDates", "CalculateurDates\DelaisDates.csproj", "{AA8A981A-B316-46DD-8B8C-F929BCE066C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA8A981A-B316-46DD-8B8C-F929BCE066C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA8A981A-B316-46DD-8B8C-F929BCE066C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA8A981A-B316-46DD-8B8C-F929BCE066C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA8A981A-B316-46DD-8B8C-F929BCE066C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EB2273B-8D9D-4FEC-8D5D-161AE6FB0397}
+	EndGlobalSection
+EndGlobal
