@@ -8,3 +8,13 @@ C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurD
 C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\obj\Release\DelaisDates.Properties.Resources.resources
 C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\obj\Release\DelaisDates.exe
 C:\Users\Raphael\Documents\Github\CalculateurDates\CalculateurDates\CalculateurDates\obj\Release\DelaisDates.pdb
+C:\Users\Raphael\Documents\Github\delaisdates\CalculateurDates\bin\Release\DelaisDates.exe.config
+C:\Users\Raphael\Documents\Github\delaisdates\CalculateurDates\bin\Release\DelaisDates.exe
+C:\Users\Raphael\Documents\Github\delaisdates\CalculateurDates\bin\Release\DelaisDates.pdb
+C:\Users\Raphael\Documents\Github\delaisdates\CalculateurDates\obj\Release\DelaisDates.csproj.AssemblyReference.cache
+C:\Users\Raphael\Documents\Github\delaisdates\CalculateurDates\obj\Release\CalculateurDates.DelaisDates.resources
+C:\Users\Raphael\Documents\Github\delaisdates\CalculateurDates\obj\Release\DelaisDates.Properties.Resources.resources
+C:\Users\Raphael\Documents\Github\delaisdates\CalculateurDates\obj\Release\DelaisDates.csproj.GenerateResource.cache
+C:\Users\Raphael\Documents\Github\delaisdates\CalculateurDates\obj\Release\DelaisDates.csproj.CoreCompileInputs.cache
+C:\Users\Raphael\Documents\Github\delaisdates\CalculateurDates\obj\Release\DelaisDates.exe
+C:\Users\Raphael\Documents\Github\delaisdates\CalculateurDates\obj\Release\DelaisDates.pdb

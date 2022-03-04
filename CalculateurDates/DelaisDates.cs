@@ -41,26 +41,28 @@ namespace CalculateurDates
         private void datePickerDeclarationAppel_ValueChanged(object sender, EventArgs e)
         {
             DateTime newDate = datePickerDeclarationAppel.Value.AddMonths(delaisMaxDepotMemoireAppelant);
-            DateTime newTime = newDate.AddDays(checkWeekendAndHoliday(newDate));
+            DateTime newTime = newDate.AddDays(checkWeekendAndHoliday(newDate, datePickerDeclarationAppel.Value.Month, this.delaisMaxDepotMemoireAppelant));
             dateLimiteDepotMemoireAppelant.Text = newTime.ToShortDateString();
             datePickerMemoireAppelant.Value = newTime;
         }
 
         private void datePickerMemoireAppelant_ValueChanged(object sender, EventArgs e)
         {
+            int initialMonth = datePickerMemoireAppelant.Value.Month;
             DateTime newDateIntime = datePickerMemoireAppelant.Value.AddMonths(delaisMaxDepotMemoireIntime);
             DateTime newDateMEC = datePickerMemoireAppelant.Value.AddMonths(delaisMaxDepotMemoireIntervenant);
-            dateLimiteDepotMemoireIntime.Text = newDateIntime.AddDays(checkWeekendAndHoliday(newDateIntime)).ToShortDateString();
-            dateLimiteDepotMemoireMisEnCause.Text = newDateMEC.AddDays(checkWeekendAndHoliday(newDateMEC)).ToShortDateString();
+            dateLimiteDepotMemoireIntime.Text = newDateIntime.AddDays(checkWeekendAndHoliday(newDateIntime, initialMonth, this.delaisMaxDepotMemoireIntime)).ToShortDateString();
+            dateLimiteDepotMemoireMisEnCause.Text = newDateMEC.AddDays(checkWeekendAndHoliday(newDateMEC, initialMonth, this.delaisMaxDepotMemoireIntervenant)).ToShortDateString();
         }
 
-        private int checkWeekendAndHoliday(DateTime date)
+        private int checkWeekendAndHoliday(DateTime date, int initialMonth, int monthLimit)
         {
             int days = 0;
             DateTime newDate = date;
-            while ((feries.Contains(newDate) || newDate.DayOfWeek == DayOfWeek.Saturday || newDate.DayOfWeek == DayOfWeek.Sunday) && days < 30)
+            DateTime tempDate = newDate;
+            while ((feries.Contains(tempDate) || tempDate.DayOfWeek == DayOfWeek.Saturday || tempDate.DayOfWeek == DayOfWeek.Sunday) && days < 30)
             {
-                if (newDate.DayOfWeek == DayOfWeek.Saturday)
+                if (tempDate.DayOfWeek == DayOfWeek.Saturday)
                 {
                     days += 2;
                 }
@@ -68,8 +70,26 @@ namespace CalculateurDates
                 {
                     days += 1;
                 }
-                newDate = new DateTime(date.Year, date.Month, date.Day, 00, 00, 00).AddDays(days);
+                tempDate = new DateTime(date.Year, date.Month, date.Day, 00, 00, 00).AddDays(days);
             }
+            if (tempDate.Month - initialMonth > monthLimit)
+            {
+                days = 0;
+                tempDate = newDate;
+                while ((feries.Contains(tempDate) || tempDate.DayOfWeek == DayOfWeek.Saturday || tempDate.DayOfWeek == DayOfWeek.Sunday) && days < 30)
+                {
+                    if (tempDate.DayOfWeek == DayOfWeek.Sunday)
+                    {
+                        days -= 2;
+                    }
+                    else
+                    {
+                        days -= 1;
+                    }
+                    tempDate = new DateTime(date.Year, date.Month, date.Day, 00, 00, 00).AddDays(days);
+                }
+            }
+                
             return days;
         }
     }
